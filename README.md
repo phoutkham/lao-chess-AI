@@ -6,8 +6,8 @@ This AI project aims to create a competitive AI for the game of chess. It utiliz
 
 [preview demo](https://laochessai.netlify.app/)
 
-![decisiontree](img/laochess.png)
-
+![laochess](img/laochess.png)
+<img src="img/laochess.png" width="400" height="300">
 # Algorithm Details
 
 ## Decision Tree
