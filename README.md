@@ -9,6 +9,7 @@ This AI project aims to create a competitive AI for the game of chess. It utiliz
 The Minimax algorithm is a recursive method for choosing the best move in a two-player game. The algorithm simulates all possible moves from the current position and selects the move that maximizes the player's advantage while minimizing the opponent's.
 
 ## Decision Tree
+![compare](png/decisiontree.jpg)
 A decision tree is used to further enhance the AI's decision-making process. This allows the AI to handle more complex scenarios and make more informed decisions.
 
 ## Scoring System
