@@ -16,6 +16,7 @@ The AI evaluates board positions using a custom scoring system:
 
 - Pawn Value: 1.2 points
 - Pawn Promotion: 2.6 points
+
 The scoring system is designed to prioritize both immediate gains and long-term strategic advantages. Pawns are valued at 1.2 points, and getting a pawn to a promotion square (where it becomes a king) is valued at an additional 2.6 points.
 
 ## Depth Limit
