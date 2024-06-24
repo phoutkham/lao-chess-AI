@@ -28,7 +28,7 @@ The scoring system is designed to prioritize both immediate gains and long-term 
 
 ## Depth Limit
 
-<img src="img/img/depthlimit.png.png" width="auto" height="400">
+<img src="img/img/depthlimit.png" width="auto" height="400">
 
 - The algorithm's depth limit specifies the number of turns to look ahead in the game tree. The number of moves possible become exponentially greater after each turn, as presented by the visual. This poses a limit to how deep we can search a game tree while playing in real time, so we have to set a depth limit. 
 
