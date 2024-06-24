@@ -5,13 +5,14 @@ This project implements a lao chess AI using the Minimax algorithm and decision 
 This AI project aims to create a competitive AI for the game of chess. It utilizes the Minimax algorithm, enhanced with alpha-beta pruning, to decide the best move by evaluating possible future game states. Additionally, a decision tree is used to handle complex decision-making processes within the game.
 
 # Algorithm Details
-## Minimax Algorithm
-The Minimax algorithm is a recursive method for choosing the best move in a two-player game. The algorithm simulates all possible moves from the current position and selects the move that maximizes the player's advantage while minimizing the opponent's.
 
 ## Decision Tree
 ![decisiontree](img/decisiontree.jpg)
 
 A decision tree is a directed graph whose nodes are game states and whose edges are moves. Its nodes can be traversed to show possible game states and their associated metrics. As the tree is traversed, its levels alternate between players; that is, if the first level represents the moves that can be made by blue, the second represents the moves that can be made by red.
+
+## Minimax Algorithm
+The Minimax algorithm is a recursive method for choosing the best move in a two-player game. The algorithm simulates all possible moves from the current position and selects the move that maximizes the player's advantage while minimizing the opponent's.
 
 ## Scoring System
 The AI evaluates board positions using a custom scoring system:
