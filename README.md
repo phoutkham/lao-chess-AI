@@ -4,7 +4,7 @@ This project implements a lao chess AI using the Minimax algorithm and decision 
 
 This AI project aims to create a competitive AI for the game of chess. It utilizes the Minimax algorithm, enhanced with alpha-beta pruning, to decide the best move by evaluating possible future game states. Additionally, a decision tree is used to handle complex decision-making processes within the game.
 
-[demo](https://667706da235f9bc3fba5c1e6--sunny-youtiao-66e4d5.netlify.app/optimized.html)
+[preview demo](https://laochessai.netlify.app/)
 
 # Algorithm Details
 
