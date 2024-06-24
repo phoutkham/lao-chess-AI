@@ -6,8 +6,8 @@ This AI project aims to create a competitive AI for the game of chess. It utiliz
 
 [preview demo](https://laochessai.netlify.app/)
 
-![laochess](img/laochess.png)
-<img src="img/laochess.png" width="400" height="300">
+<img src="img/laochess.png" width="auto" height="400">
+
 # Algorithm Details
 
 ## Decision Tree
@@ -28,7 +28,7 @@ The scoring system is designed to prioritize both immediate gains and long-term 
 
 ## Depth Limit
 
-![depthlimit](img/depthlimit.png)
+<img src="img/img/depthlimit.png.png" width="auto" height="400">
 
 - The algorithm's depth limit specifies the number of turns to look ahead in the game tree. The number of moves possible become exponentially greater after each turn, as presented by the visual. This poses a limit to how deep we can search a game tree while playing in real time, so we have to set a depth limit. 
 
