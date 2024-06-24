@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Laos Chess AI</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, minimal-ui" />
+		<meta name="msapplication-tap-highlight" content="no"/>
+		<style>
+			p {
+				line-height: 0;
+			}
+			input {
+				width: 50px
+			}
+		</style>
+        <script type="text/javascript" src="js/popper.min.js"></script>
+        <script type="text/javascript" src="js/createjs.min.js"></script>
+		<script type="text/javascript" src="js/utils.min.js"></script>
+        <script type="text/javascript" src="js/chess.min.js"></script>
+        <script type="text/javascript" src="/AI.js"></script>
+    </head>
+    <body>
+        <div style="position: absolute; z-index:100">
+            <span>DEPTH: </span><input id="depth" value="5" />
+            <button onclick="updateConfig()">update</button>
+            <P>The depth should not exceed 7.</p>
+			<p>The more depth mean the more processing is required.</P>
+            <span>pawn value: </span>
+            <input id="pawn" value="1.2" />
+            <span>king value: </span>
+            <input id="king" value="2.6" />
+            <button onclick="updateConfig()">update</button>
+        </div>
+        <div id="div_display_id"></div>
+        <canvas id="canvas" width="1920" height="1920" style="position:fixed"> </canvas>
+    </body>
+    <script>
+
+      const urlParams = new URLSearchParams(window.location.search);
+
+      const _depth = urlParams.get('depth');
+      const _king = urlParams.get('king');
+      const _pawn = urlParams.get('pawn');
+
+      const SEARCH_DEPTH = _depth ? Number(_depth) : 4;
+      const pawnValue = _pawn ? Number(_pawn) : 1.2;
+      const kingValue = _king ? Number(_king) : 2.6;
+
+      document.getElementById('depth').value = SEARCH_DEPTH;
+      document.getElementById('king').value = kingValue;
+      document.getElementById('pawn').value = pawnValue;
+
+      function updateConfig() {
+        const depth = document.getElementById('depth').value;
+        const kingValue = document.getElementById('king').value;
+        const pawnValue = document.getElementById('pawn').value;
+        window.location.assign('?depth='+depth+'&king='+kingValue+'&pawn='+pawnValue);
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+
+        const ai = new AI({
+          pawn: pawnValue,
+          king: kingValue
+        });
+
+        const chessGame = new chess(ai);
+		
+      });
+
+    </script>
+</html>
