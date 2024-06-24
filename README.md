@@ -19,6 +19,7 @@ The AI evaluates board positions using a custom scoring system:
 The scoring system is designed to prioritize both immediate gains and long-term strategic advantages. Pawns are valued at 1.2 points, and getting a pawn to a promotion square (where it becomes a king) is valued at an additional 2.6 points.
 
 ## Depth Limit
+![depthlimit](png/depth limit.png)
 - The algorithm's depth limit specifies the number of turns to look ahead in the game tree. The number of moves possible become exponentially greater after each turn, as presented by the visual. This poses a limit to how deep we can search a game tree while playing in real time, so we have to set a depth limit. 
 
 - For example, if there are 10 possible moves each player can make each turn, all 10 of those moves would need to be explored if we're not using alpha-beta pruning. At a depth level of 3 that adds up to 10^3 total moves, regardless of whether or not they actually improve the player's score. This idea is visually represented in the nested tree where each branch from the root creates its own tree. A smaller example with 3 possible moves and 3 turns is represented on the right. Notice how the third turn had 3^3=9 possible moves.
