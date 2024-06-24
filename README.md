@@ -10,7 +10,8 @@ The Minimax algorithm is a recursive method for choosing the best move in a two-
 
 ## Decision Tree
 ![decisiontree](img/decisiontree.jpg)
-A decision tree is used to further enhance the AI's decision-making process. This allows the AI to handle more complex scenarios and make more informed decisions.
+
+A decision tree is a directed graph whose nodes are game states and whose edges are moves. Its nodes can be traversed to show possible game states and their associated metrics. As the tree is traversed, its levels alternate between players; that is, if the first level represents the moves that can be made by blue, the second represents the moves that can be made by red.
 
 ## Scoring System
 The AI evaluates board positions using a custom scoring system:
